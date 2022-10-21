@@ -4,7 +4,7 @@ services:
         container_name: default-auth-service
         image: test/default-auth-service-test:0.0.1-SNAPSHOT
 #        networks:
-#            - csc7-net
+#            - witosh-net
 #        depends_on:
 #            - config-server
 #            - redis
@@ -14,7 +14,7 @@ services:
             - "8080:8080"
 
 #networks:
-#    csc7-net:
+#    withos-net:
 #        driver: bridge 
 #        ipam:
 #            config:
