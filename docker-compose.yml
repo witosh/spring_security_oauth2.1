@@ -3,8 +3,8 @@ services:
     auth-service:
         container_name: default-auth-service
         image: test/default-auth-service-test:0.0.1-SNAPSHOT
-#        networks:
-#            - witosh-net
+        networks:
+            - witosh-net
 #        depends_on:
 #            - config-server
 #            - redis
@@ -13,10 +13,10 @@ services:
         ports:
             - "8080:8080"
 
-#networks:
-#    withos-net:
-#        driver: bridge 
-#        ipam:
-#            config:
-#                - subnet: 172.16.57.0/24
+networks:
+    witosh-net:
+        driver: bridge 
+ #       ipam:
+ #           config:
+ #               - subnet: 172.16.57.0/24
 
