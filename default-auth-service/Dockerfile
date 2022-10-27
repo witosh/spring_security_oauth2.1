@@ -1,4 +1,5 @@
-FROM adoptopenjdk/openjdk8:alpine-slim
+#FROM adoptopenjdk/openjdk8:alpine-slim
+FROM khipu/openjdk17-alpine
 
 ADD target/default-auth-service-test-0.0.1-SNAPSHOT.jar /home/cscapprun/default-auth-service-test.jar
 

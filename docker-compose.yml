@@ -10,9 +10,10 @@ services:
 #            - redis
         expose:
             - "8080"
+            - "55551"
         ports:
             - "8080:8080"
-
+            - "55551:55551"
 networks:
     witosh-net:
         driver: bridge 

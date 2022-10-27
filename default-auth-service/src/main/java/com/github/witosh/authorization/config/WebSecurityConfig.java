@@ -25,7 +25,7 @@ public class WebSecurityConfig {
 	public UserDetailsService userDetailsService() {
 		UserDetails user = User
 				.withUsername("bill")
-				.password("password")
+				.password("12345")
 				.authorities("read")
 				.build();
 		InMemoryUserDetailsManager detailsManager = new InMemoryUserDetailsManager();
